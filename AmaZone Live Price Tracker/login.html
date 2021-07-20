@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>AmaZone Live Price Tracker</title>
+        <style>
+            label {
+                font-family: 'Lucida Sans'; 
+                font-weight: 200; 
+                font-size: medium; 
+                padding-left: 14.3%;
+            }
+            input {
+                width:70%; 
+                display:block; 
+                margin-left: auto; 
+                margin-right: auto;
+            }
+            form {
+                padding: 10vw 0vw;
+            }
+            .center {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+            .button {
+                border:1% black;
+                border-radius: 6%;
+                background-color: darkgray;
+                padding:6px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 14px;
+                font-family: Tahoma;
+                font-weight: 700;
+                margin: 0vw 1vw;
+                transition-duration: 0.2s;
+                transition-timing-function: ease;
+                background-image: linear-gradient(rgb(255, 252, 95), rgba(219, 201, 40, 0.397));
+                cursor: pointer;
+            }
+            .button:hover,
+            .button:focus {
+                transform: scale(1.1);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main" style = "width: 25rem; height: 23rem; padding: 1vw 0vw;">
+            <p class="title" style="font-family: 'Lucida Sans'; font-weight: 700; font-size: xx-large; padding-top: 1vw; text-align: center;">Log In</p>
+            <p class="title" style="font-family: 'Lucida Sans'; font-weight: 700; font-size: large; margin-top: -1.4vw; text-align: center;">For a new way to experience e-commerce.</p>
+            <p class="title" style="font-family: 'Lucida Sans'; font-weight: 700; font-size:small; margin-top: -0.9vw; text-align: center;">You wouldn't want to go back.</p>
+
+            <p class="subtitle" style="font-family: Tahoma; font-size: small; text-align: center;">Login or signup to start using <strong>AmaZone</strong>'s full suite of features.</p>
+
+            <div id="login", style="padding: 1vw 5vw 1vw;" ng-controller="loginCtrl">
+                <form action="sidebar.js" id="login">
+                        <label>Registered E-mail ID</label><br>
+                        <input type="email" placeholder="E-mail" ng-model="regEmail"><br><br>
+
+                        <label>Password</label><br>
+                        <input type="text" placeholder="Password" ng-model="regPwd"><br><br>
+
+                        <div class="center" style="padding-bottom:25vw">
+                            <button type="button" class="button" value="Login" ng-click="authenticate(regEmail, regPwd)">Login</button>&emsp;
+                            <button type="button" class="button" style="background-image: linear-gradient(lightgray, darkgray);" ng-click="toSignup()">Sign Up</button>
+                        </div>
+                </form>
+            </div>
+        </div><br><br>
+    </body>
+</html>
