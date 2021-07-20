@@ -1,0 +1,29 @@
+{
+  "name": "amazone",
+  "version": "1.0.0",
+  "description": "\u0016\u0016An extension to track price changes for products added to user carts, to make better informed purchase decisions.",
+  "main": "server.js",
+  "scripts": {
+    "test": "alert(\"Launching AmaZone...\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u001b[A\u001b[BAmaZone"
+  },
+  "keywords": [
+    "price",
+    "tracker"
+  ],
+  "author": "Utkarsh Chaturvedi",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.12.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.3",
+    "morgan": "^1.10.0"
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "name": "AmaZone - A one-stop Price Tracking tool",
+    "version": "1.0",
+    "description":"An extension to track price changes for products added to user carts, to make better informed purchase decisions.",
+    "manifest_version": 2,
+    "background": {
+        "scripts": ["jquery.js", "background.js"]
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*.amazon.in/*"],
+            "js": ["jquery.js", "content.js"]
+        }
+    ],
+    "browser_action": {
+        "default_popup": "sidebar.html",
+        "default_title": "AmaZone Live Price Tracker"
+    }
+
+}

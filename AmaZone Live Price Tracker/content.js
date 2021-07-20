@@ -1,0 +1,1 @@
+alert("Want to do more with your Amazon webpage? \nWatch this space.")
